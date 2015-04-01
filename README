@@ -3,8 +3,8 @@
 **Description**: AIMS sets out to create a scalable resource for IT Customers to use and IT Teams to remain agile that allows an Business Orginization to be the First Responder in managing their applications and infrastructure. This is acheived by building a scalable agentless centerialized configuration management system based off Ansible and functions cross platform/hosting environment.
 
     - **Technology stack**: Ansible, Docker, Python, Sinatra, Ruby, json, RESTful API
-    - **Status**: Active Development - Please review the [CHANGELOG](CHANGELOG.md).
-    - 
+    - **Status**: Active Development - [![Build Status](https://travis-ci.org/denzuko/AIMS.svg?branch=master)](https://travis-ci.org/denzuko/AIMS) - Please review the [CHANGELOG](CHANGELOG.md). 
+   
 
 ## Dependencies
 
