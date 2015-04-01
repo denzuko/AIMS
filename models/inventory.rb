@@ -25,7 +25,7 @@ module IMS
 				   'host'	=> {
 					   'name'	 => self.name,
 					   'internal_ip' => self.internal_ip,
-					   'external_ip' => self.internal_ip,
+					   'external_ip' => self.external_ip,
 					   'fqdn'	 => self.fqdn,
 					   'client_name' => self.client_name
 				   }
