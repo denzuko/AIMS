@@ -1,42 +1,43 @@
-# AIMS Anisbile IT management system
+# AIMS Anisbile IT management system #
 
 **Description**: AIMS sets out to create a scalable resource for IT Customers to use and IT Teams to remain agile that allows an Business Orginization to be the First Responder in managing their applications and infrastructure. This is acheived by building a scalable agentless centerialized configuration management system based off Ansible and functions cross platform/hosting environment.
 
     - **Technology stack**: Ansible, Docker, Python, Sinatra, Ruby, json, RESTful API
     - **Status**: Active Development - [![Build Status](https://travis-ci.org/denzuko/AIMS.svg?branch=master)](https://travis-ci.org/denzuko/AIMS) - Please review the [CHANGELOG](CHANGELOG.md). 
-   
+    - **Support Forum**: [![ProjectTalk](http://www.projecttalk.io/images/gh_badge-3e578a9f437f841de7446bab9a49d103.svg?vsn=d)] (http://www.projecttalk.io/boards/denzuko%2FAIMS?utm_campaign=gh-badge&utm_medium=badge&utm_source=github)
+    - **Quick Deploy**: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-## Dependencies
+## Dependencies ##
 
 Describe any dependencies that must be installed for this software to work. 
 This includes programming languages, databases or other storage mechanisms, build tools, frameworks, and so forth.
 If specific versions of other software are required, or known not to work, call that out.
 
-## Installation
+## Installation ##
 
 Detailed instructions on how to install, configure, and get the project running.
 This should be frequently tested to ensure reliability. Alternatively, a link to
 another page is fine, but it's important that this works.
 
-## Configuration
+## Configuration ##
 
 If the software is configurable, describe it in detail, either here or in other documentation to which you link.
 
-## Usage
+## Usage ##
 
 Show users how to use the software. 
 Be specific. 
 Use appropriate formatting when showing code snippets.
 
-## How to test the software
+## How to test the software ##
 
 If the software includes automated tests, detail how to run those tests.
 
-## Known issues
+## Known issues ##
 
 Document any known significant shortcomings with the software.
 
-## Getting help
+## Getting help ##
 
 Instruct users how to get help with this software; this might include links to an issue tracker, wiki, mailing list, etc.
 
@@ -44,7 +45,7 @@ Instruct users how to get help with this software; this might include links to a
 
 If you have questions, concerns, bug reports, etc, please file an issue in this repository's Issue Tracker.
 
-## Getting involved
+## Getting involved ##
 
 This section should detail why people should get involved and describe key areas you are
 currently focusing on; e.g., trying to get feedback on features, fixing certain bugs, building
@@ -55,7 +56,7 @@ General instructions on _how_ to contribute should be stated with a link to [CON
 
 ----
 
-## Open source licensing info
+## Open source licensing info ##
 1. [TERMS](TERMS.md)
 2. [LICENSE](LICENSE)
 3. [CFPB Source Code Policy](https://denzuko.github.io/source-code-policy/)
@@ -63,7 +64,7 @@ General instructions on _how_ to contribute should be stated with a link to [CON
 
 ----
 
-## Credits and references
+## Credits and references ##
 
 1. Projects that inspired you
 2. Related projects
