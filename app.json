@@ -1,0 +1,7 @@
+{
+  "name": "AIMS Ansible IT Management System",
+  "description": "AIMS sets out to create a scalable resource for IT Customers to use and IT Teams to remain agile that allows an Business Orginization to be the First Responder in managing their applications and infrastructure. This is acheived by building a scalable agentless centerialized configuration management system based off Ansible and functions cross platform/hosting environment",
+  "repository": "https://github.com/denzuko/AMIS",
+  "logo": "https://www.ansible.com/hs-fs/hub/330046/file-764918156-png/Official_Logos/ansible_circleA_black.png?t=1441817331366",
+  "keywords": ["ruby", "sinatra", "ansible"]
+}
