@@ -1,4 +1,4 @@
-# AIMS Anisbile IT management system #
+# AIMS Ansibile IT management system #
 
 **Description**: AIMS sets out to create a scalable resource for IT Customers to use and IT Teams to remain agile that allows an Business Orginization to be the First Responder in managing their applications and infrastructure. This is acheived by building a scalable agentless centerialized configuration management system based off Ansible and functions cross platform/hosting environment.
 
