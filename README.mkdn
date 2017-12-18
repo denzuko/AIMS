@@ -4,7 +4,7 @@
 
  - **Technology stack**: Ansible, Docker, Python, Sinatra, Ruby, json, RESTful API
  - **Status**: Active Development - [![Build Status](https://travis-ci.org/denzuko/AIMS.svg?branch=master)](https://travis-ci.org/denzuko/AIMS) - Please review the [CHANGELOG](CHANGELOG.md). 
- - **Support Forum**: [![ProjectTalk](http://www.projecttalk.io/images/gh_badge-3e578a9f437f841de7446bab9a49d103.svg?vsn=d)] (http://www.projecttalk.io/boards/denzuko%2FAIMS?utm_campaign=gh-badge&utm_medium=badge&utm_source=github)
+ - **Support Forum**: [![Gitter chat](https://badges.gitter.im/denzuko/AIMS.png)](https://gitter.im/denzuko/AIMS)
  - **Quick Deploy**: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
  - [ ![Codeship Status for denzuko/AIMS](https://codeship.com/projects/f939ac10-c5d9-0132-64b6-6a0292aa2e87/status?branch=master)](https://codeship.com/projects/74534)
 
