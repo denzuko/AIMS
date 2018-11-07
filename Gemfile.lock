@@ -57,15 +57,15 @@ GEM
     json (1.8.2)
     json_pure (1.8.2)
     multi_json (1.11.0)
-    mustermann (1.0.2)
-    rack (2.0.5)
-    rack-protection (2.0.3)
+    mustermann (1.0.3)
+    rack (2.0.6)
+    rack-protection (2.0.4)
       rack
     rake (12.3.1)
-    sinatra (2.0.3)
+    sinatra (2.0.4)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.3)
+      rack-protection (= 2.0.4)
       tilt (~> 2.0)
     stringex (1.5.1)
     tilt (2.0.8)
@@ -79,7 +79,7 @@ DEPENDENCIES
   dm-sqlite-adapter
   json
   rake
-  sinatra (>= 2.0.2)
+  sinatra (>= 2.0.3)
 
 BUNDLED WITH
-   1.16.1
+   1.16.6
