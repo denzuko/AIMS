@@ -40,11 +40,15 @@ __author_url__ = "https://dwightaspencer.com"
 # =============================================================================
 
 from os import environ, exit
+from secrets import token_urlsafe
+from hashlib import sha1
+from socket import getfqdn
 from redis import StrictRedis
 from redis.exceptions import ConnectionError as RedisConnectError
 from eve import Eve
 from eve.exceptions import ConfigException as EveConfigError
 from eve_swagger import swagger
+from eve_auth_jwt import JWTAuth
 
 # =============================================================================
 # Methods
@@ -61,7 +65,7 @@ class ApiInstance(object):
             print(error)
             os.exit(False)
 
-        self.app = Eve(redis=self.redis)
+        self.app = Eve(redis=self.redis, auth=JWTAuth)
         self.app.register_blueprint(swagger)
         try:
             self.api_config()
@@ -97,6 +101,8 @@ class ApiInstance(object):
         self.app.config['SCHEMA_ENDPOINT'] = '/schema'
         self.app.config['SOFT_DELETE'] = True
         self.app.config['OPTIMIZE_PAGINATION_FOR_SPEED'] = True
+        self.app.config['JWT_SECRET'] = environ.get('JWT_SECRET', sha1(token_urlsafe(32)))
+        self.app.config['JWT_ISSUER'] = environ.get('JWT_ISSUER', getfqdn().lower())
 
     def boot(self):
         """ 
