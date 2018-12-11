@@ -33,6 +33,8 @@ If the software is configurable, describe it in detail, either here or in other 
 | CORS_DOMAINS    | string(default="*")         | Allowed values are: None, a list of domains, or '*' for a wide-open API. | 
 | MONGO_URI       | string(default="mongodb://user:user@mongo:27017/apidemo")   | Location of the mongodb instance (mongodb) |
 | REDIS_URI       | string(default="redis://redis:6379/0")   | Location of the redis instance (redis) |
+| JWT_SECRET      | string() randomly geneated   | secret token used for oauth/jwt authentication (eve-auth-jwt) |
+| JWT_ISSUER      | string() hostname   | token issuer identity used for oauth/jwt authentication (eve-auth-jwt) |
 
 ## Usage ##
 
