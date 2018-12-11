@@ -1,7 +1,7 @@
 {
   "name": "Ansible IT Management System",
   "description": "A scalable agentless centerialized configuration management system",
-  "repository": "https://github.com/denzuko/AMIS",
+  "repository": "https://github.com/denzuko/AIMS",
   "logo": "https://www.ansible.com/hs-fs/hub/330046/file-764918156-png/Official_Logos/ansible_circleA_black.png?t=1441817331366",
-  "keywords": ["ruby", "sinatra", "ansible"]
+  "keywords": ["python", "flask", "ansible"]
 }
