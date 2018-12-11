@@ -30,12 +30,9 @@ If the software is configurable, describe it in detail, either here or in other 
 | --------------- | --------------------------- | -------------------------------------------------------------- |
 | ENVIRONMENT     | <development\|production>   | Effects levels of verbosity, and other items like that (flask) |
 | PORT            | integer(default=8080)       | Port to listen on (flask and heroku)                           |
-| MONGO_HOST      | string(default="mongodb")   | Location of the mongodb instance (mongodb)                     |
-| MONGO_PORT      | integer(default=27017)      | The port of ones mongodb instance (mongodb)                    |
-| MONGO_USERNAME  | string(default="user")      | The user account to access ones mongodb instance (mongodb)     |
-| MONGO_PASSWORD  | integer(default="user")     | The user password to access ones mongodb instance (mongodb)    |
-| MONGO_DBNAME    | integer(default="apitest")  | The user password to access ones mongodb instance (mongodb)    |
-
+| CORS_DOMAINS    | string(default="*")         | Allowed values are: None, a list of domains, or '*' for a wide-open API. | 
+| MONGO_URI       | string(default="mongodb://user:user@mongo:27017/apidemo")   | Location of the mongodb instance (mongodb) |
+| REDIS_URI       | string(default="redis://redis:6379/0")   | Location of the redis instance (redis) |
 
 ## Usage ##
 
