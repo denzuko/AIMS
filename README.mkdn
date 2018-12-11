@@ -2,7 +2,7 @@
 
 **Description**: AIMS sets out to create a scalable resource for IT Customers to use and IT Teams to remain agile that allows an Business Orginization to be the First Responder in managing their applications and infrastructure. This is acheived by building a scalable agentless centerialized configuration management system based off Ansible and functions cross platform/hosting environment.
 
- - **Technology stack**: Ansible, Docker, Python, Sinatra, Ruby, json, RESTful API
+ - **Technology stack**: Ansible, Docker, Python, Eve/Flask, Swagger, Redis, Mongodb, Hateoas, json, RESTful API
  - **Status**: Active Development - [![Build Status](https://travis-ci.org/denzuko/AIMS.svg?branch=master)](https://travis-ci.org/denzuko/AIMS) - Please review the [CHANGELOG](CHANGELOG.md). 
  - **Support Forum**: [![Gitter chat](https://badges.gitter.im/denzuko/AIMS.png)](https://gitter.im/denzuko/AIMS)
  - **Quick Deploy**: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
@@ -16,13 +16,26 @@ If specific versions of other software are required, or known not to work, call 
 
 ## Installation ##
 
-Detailed instructions on how to install, configure, and get the project running.
-This should be frequently tested to ensure reliability. Alternatively, a link to
-another page is fine, but it's important that this works.
+docker-machine create aims && eval $(docker-machine env $_)
+docker pull denzuko/aims:latest
+docker run -p 8080 -ti -e ENVIRONMENT=production -d $_
 
 ## Configuration ##
 
 If the software is configurable, describe it in detail, either here or in other documentation to which you link.
+
+### Environment Varaibles ###
+
+| Name            | Expected values             | Description                                                    |
+| --------------- | --------------------------- | -------------------------------------------------------------- |
+| ENVIRONMENT     | <development\|production>   | Effects levels of verbosity, and other items like that (flask) |
+| PORT            | integer(default=8080)       | Port to listen on (flask and heroku)                           |
+| MONGO_HOST      | string(default="mongodb")   | Location of the mongodb instance (mongodb)                     |
+| MONGO_PORT      | integer(default=27017)      | The port of ones mongodb instance (mongodb)                    |
+| MONGO_USERNAME  | string(default="user")      | The user account to access ones mongodb instance (mongodb)     |
+| MONGO_PASSWORD  | integer(default="user")     | The user password to access ones mongodb instance (mongodb)    |
+| MONGO_DBNAME    | integer(default="apitest")  | The user password to access ones mongodb instance (mongodb)    |
+
 
 ## Usage ##
 
@@ -60,7 +73,7 @@ General instructions on _how_ to contribute should be stated with a link to [CON
 ## Open source licensing info ##
 1. [TERMS](TERMS.md)
 2. [LICENSE](LICENSE)
-3. [CFPB Source Code Policy](https://denzuko.github.io/source-code-policy/)
+3. [Source Code Policy](https://denzuko.github.io/source-code-policy/)
 
 
 ----
