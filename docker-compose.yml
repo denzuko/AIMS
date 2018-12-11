@@ -1,0 +1,46 @@
+---
+version: '3.5'
+services:
+  api:
+    image: 'denzuko/aims:latest'
+    ports:
+      - '8080/tcp'
+    depends_on:
+      - redis
+      - mongodb
+    deploy:
+     replicas: 3
+    networks;
+      - default
+      
+  mongo:
+    image: 'mongo:latest'
+    volumes:
+      - mongodata:/data/db/mongo
+    networks:
+      default:
+        aliasas:
+          - 'mongodb'
+          - 'redis'
+      ports:
+        - "27017"
+        
+  redis:
+    image: 'redis:latest'
+    volumes:
+      - redisdata:/data/db/redis
+    ports:
+      - 6379/tcp
+    networks:
+      default:
+        aliasas:
+          - 'redis'
+
+volumes;
+  mongodata: {}
+  redisdata: {}
+  
+networks:
+  default: {}
+...
+# vim: set sw=2 sts=2 ts=2 et ai cin numbers list :
