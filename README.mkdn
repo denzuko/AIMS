@@ -16,9 +16,29 @@ If specific versions of other software are required, or known not to work, call 
 
 ## Installation ##
 
-docker-machine create aims && eval $(docker-machine env $_)
-docker pull denzuko/aims:latest
-docker run -p 8080 -ti -e ENVIRONMENT=production -d $_
+### generic script with (openssh, docker-machine, and docker)
+```
+export RHOST=localhost
+[ -f $HOME/.id_rsa ] || ssh-keygen
+eval $(ssh-agent) && ssh-add
+ssh-copy-id $RHOST 
+docker-machine -d generic --generic-ip-address=$RHOST create aims && eval $(docker-machine env aims)
+docker swarm init
+docker swarm deploy -c docker-compose.yml
+```
+
+### Cloud-init
+```
+#cloud-init
+packages
+ - docker
+ 
+runcmd:
+
+ - [ wget, "https://github.com/${USER}/", -O, ~/.ssh/authorized_keys ]
+ - [ wget, "https://get.docker.com/", -O, /dev/stdout, "|", "bash", "-" ]
+
+```
 
 ## Configuration ##
 
