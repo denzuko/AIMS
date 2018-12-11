@@ -1,1 +1,1 @@
-web: python app.py
+web: /usr/bin/env python aims/
