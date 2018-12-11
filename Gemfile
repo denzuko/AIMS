@@ -1,6 +1,0 @@
-source 'https://rubygems.org'
-gem 'sinatra', '>= 2.0.3'
-gem 'data_mapper'
-gem 'dm-sqlite-adapter'
-gem 'json'
-gem 'rake'
