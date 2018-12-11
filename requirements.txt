@@ -1,6 +1,0 @@
-redis
-mongodb
-eve
-eve-swagger
-eve-jwt-auth
-honcho
