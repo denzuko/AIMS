@@ -36,7 +36,7 @@ services:
         aliasas:
           - 'redis'
 
-volumes;
+volumes:
   mongodata: {}
   redisdata: {}
   
