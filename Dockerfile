@@ -1,4 +1,4 @@
-FROM python:alpine
+FROM python:rc-alpine
 # Metadata params
 ARG VERSION="1.0.0"
 ARG VCS_URL="https://github.com/denzuko/AIMS"
