@@ -23,8 +23,8 @@ jobs:
     - name: Analysing the code with pylint
       run: find . -type f -name \*.py -not -path .git -exec pylint {} \;
 
-    - name: Python Cov 
+    - name: Python Cov
       uses: orgoro/coverage@v1
-        with:
-          coverageFile: ./coverage.xml
-          token: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        coverageFile: ./coverage.xml
+        token: ${{ secrets.GITHUB_TOKEN }}
