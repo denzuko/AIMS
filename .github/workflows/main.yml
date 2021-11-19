@@ -3,7 +3,7 @@ name: Build and Release Container Image
 on:
   push:
     branches:
-      - master
+      - ${{ github.event.repository.default_branch }}
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Build image
-        uses: dfreilich/pack-action@v2
+        uses: dfreilich/pack-action@v2.0.15
         with:
           args: 'build ${{ github.repository }} --builder paketobuildpacks/builder:base  --publish'
 
