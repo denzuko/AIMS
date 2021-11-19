@@ -10,6 +10,7 @@ on:
         default: $default-branch
 
 env:
+  tf_actions_working_dir: deploy
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
   # github.repository as <account>/<repo>
@@ -21,6 +22,7 @@ jobs:
     permissions:
       contents: read
       packages: write
+      
     defaults:
       run:
         working-directory: ${{ env.tf_actions_working_dir }}
