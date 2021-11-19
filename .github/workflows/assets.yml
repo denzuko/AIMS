@@ -1,8 +1,8 @@
-name: Assets
+name: "Continous Build Assets"
 
 on:
   schedule:
-    - cron: '@daily'
+    - cron: '00 13 * * *'
   push:
     branches: [ $default-branch ]
     # Publish semver tags as releases.
