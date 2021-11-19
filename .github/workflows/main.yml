@@ -2,7 +2,7 @@ name: Build and Release Container Image
 
 on:
   schedule:
-    - cron: $cron-daily
+    - cron: '@daily'
   push:
     branches: [ $default-branch ]
     # Publish semver tags as releases.
