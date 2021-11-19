@@ -1,6 +1,12 @@
 name: "Continous Build Assets"
 
 on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Release to push'
+        required: false
+        default: $default-branch
   schedule:
     - cron: '00 13 * * *'
   push:
