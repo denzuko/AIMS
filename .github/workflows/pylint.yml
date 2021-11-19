@@ -21,4 +21,4 @@ jobs:
         pip install pylint
 
     - name: Analysing the code with pylint
-      run: find . -type f -name \*.py -not path .git -exec pylint {} \;
+      run: find . -type f -name \*.py -not -path .git -exec pylint {} \;
