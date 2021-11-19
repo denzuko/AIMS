@@ -1,4 +1,4 @@
-name: Pylint
+name: "Quality Gates"
 
 on: [push, pull_request]
 
