@@ -2,14 +2,14 @@
 version: '3.7'
 
 x-labels: &metadata
-  org.label-schema.vendor:"denzuko"
+  org.label-schema.vendor: "denzuko"
   org.label-schema.url: "https://dwightaspencer.com"
   org.label-schema.name: "aims"
   org.label-schema.description: "ansible inventory management system"
   org.label-schema.version: 1.0.0
   org.label-schema.vcs-url: "https://github.com/denzuko/AIMS"
-  org.label-schema.vcs-ref="master"
-  org.label-schema.docker.schema-version="1.0"
+  org.label-schema.vcs-ref: "master"
+  org.label-schema.docker.schema-version: "1.0"
   com.dwightaspencer.role: "cmdb"
   com.dwightaspencer.owner: "INT-01"
 
