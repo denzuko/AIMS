@@ -1,0 +1,30 @@
+name: Build and Release Container Image
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: login to dockerhub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      - name: Build image
+        uses: dfreilich/pack-action@v2
+        with:
+          args: 'build ${{ github.repository }} --builder paketobuildpacks/builder:base  --publish'
+
+      - name: Scan image
+        uses: anchore/scan-action@v3
+        with:
+          image: "${{ github.repository }}:latest"
+          fail-build: false
