@@ -2,5 +2,5 @@ redis
 pymongo
 eve
 eve-swagger
-eve-jwt-auth
+eve-auth-jwt
 honcho
