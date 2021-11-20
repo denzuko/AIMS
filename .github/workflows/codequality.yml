@@ -24,6 +24,7 @@ jobs:
       run: find . -type f -name \*.py -not -path .git -exec pylint {} \;
 
     - name: Python Cov
+      if: github.event_name != 'pull_request'
       uses: orgoro/coverage@v1
       with:
         coverageFile: ./coverage.xml
