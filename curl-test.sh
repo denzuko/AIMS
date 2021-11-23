@@ -1,3 +1,5 @@
+# Copyright (C) 2018, Dwight Spencer
+
 ims_host=${ims_host:-"localhost"}
 ims_port=${ims_port:-"9292"}
 ims_protocol=${ims_protocol:-"http"}
