@@ -1,3 +1,4 @@
+# Copyright 2012, Dwight Spencer
 """
 A setuptools based setup module.
 Based on the example at:
