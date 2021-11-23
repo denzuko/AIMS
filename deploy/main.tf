@@ -1,3 +1,5 @@
+# Copyright (C) 2018, Dwight Spencer
+
 terraform {
   required_providers {
     env = {
