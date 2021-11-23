@@ -9,6 +9,8 @@ Author: Dwight Spencer
 Date created: Dec 11 10:54:12 2018
 Date last modified: Tue Dec 11 10:55:35 CST 2018
 Python Version: 2.7 or 3.1
+    
+Copyright (C) 2018, Dwight Spencer
 
 """
 
